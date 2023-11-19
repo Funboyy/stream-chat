@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+  Redirecting you automatically, click <a id='redirect'>here</a> if your browser does not redirect you.
+
+  <script>
+    const query = (window.location.search || '');
+    const hash = (window.location.hash.substring(1) || '');
+
+    let newQuery;
+
+    if (query === '') {
+      newQuery = (hash === '' ? '' : '?' + hash);
+    } else {
+      newQuery = query + (hash === '' ? '' : '&' + hash);
+    }
+
+    const href = 'http://localhost:' + window.location.port + '/token' + newQuery;
+    document.getElementById('redirect').setAttribute('href', href);
+    window.location.replace(href);
+  </script>
+  </body>
+</html>

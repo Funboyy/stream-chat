@@ -1,0 +1,41 @@
+.container {
+  left: 50%;
+  top: 50%;
+  height: fit-content;
+  width: 50%;
+  alignment-x: center;
+  alignment-y: center;
+  space-between-entries: 10;
+
+  .logo {
+    width: 150;
+    height: 30;
+    space-between-entries: 3;
+
+    * {
+      alignment: center;
+    }
+
+    .icon {
+      width: 20;
+      height: width;
+    }
+
+    .name {
+      font-size: 2;
+    }
+  }
+
+  .text {
+    left: 50%;
+    width: 100%;
+    alignment-x: center;
+  }
+
+  .button-cancel {
+    left: 50%;
+    top: 0;
+    width: 170;
+    alignment-x: center;
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "labystreamchat": {
+    "settings": {
+      "name": "LabyStreamChat",
+      "header": {
+        "message": {
+          "name": "Message Settings"
+        }
+      },
+      "enabled": {
+        "name": "Enabled"
+      },
+      "channel": {
+        "name": "Channel",
+        "description": "Input the channel here you want to receive messages from."
+      },
+      "tokenConfig": {
+        "name": "Token (DO NOT share)",
+        "description": "This settings contains your Twitch Token. DO NOT share this token. If you accidental show your token press the 'Revoke' button in the token config.",
+        "token": {
+          "name": "Twitch Token",
+          "description": "This is your Twitch Token. DO NOT share this token. If you accidental show your token press the 'Revoke' button."
+        },
+        "authorize": {
+          "name": "Generate Twitch Token",
+          "description": "Click here to generate your Twitch Token.",
+          "text": "Generate"
+        },
+        "revoke": {
+          "name": "Revoke Twitch Token",
+          "description": "Click here to revoke your Twitch Token.",
+          "text": "Revoke"
+        }
+      },
+      "soundOnMessage": {
+        "name": "Sound on Message",
+        "description": "Should a sound play when you receive a message."
+      },
+      "showTwitchEmotes": {
+        "name": "Display Twitch Emotes",
+        "description": "Should Twitch Emotes be rendered or shown as plain text."
+      },
+      "showSevenTvEmotes": {
+        "name": "Display 7TV Emotes",
+        "description": "Should 7TV Emotes be rendered or shown as plain text."
+      },
+      "showBetterTtvEmotes": {
+        "name": "Display BTTV Emotes",
+        "description": "Should BetterTTV Emotes be rendered or shown as plain text."
+      },
+      "showFrankerFaceZ": {
+        "name": "Display FFZ Emotes",
+        "description": "Should FrankerFaceZ Emotes be rendered or shown as plain text."
+      }
+    },
+    "activity": {
+      "text": "A new window opened with the Twitch Authentication.",
+      "button": "Cancel"
+    },
+    "notification": {
+      "revoke": {
+        "success": "Token was successfully revoked",
+        "error": "Error while revoking token"
+      },
+      "authorize": {
+        "success": "Token was successfully generated",
+        "error": "Error while generating token"
+      }
+    },
+    "command": {
+      "usage": "Use /tc <message>",
+      "channel": "You need to select a channel before you can sent a message.",
+      "chat": {
+        "disconnected": "Not connected to the chat.",
+        "connecting": "Connecting to chat please try again in a moment."
+      }
+    }
+  }
+}
