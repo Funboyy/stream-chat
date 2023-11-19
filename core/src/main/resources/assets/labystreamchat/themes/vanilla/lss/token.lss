@@ -32,7 +32,7 @@
     alignment-x: center;
   }
 
-  .button-cancel {
+  .button {
     left: 50%;
     top: 0;
     width: 170;
