@@ -40,6 +40,7 @@ public class Message {
     final int size = MathHelper.ceil(8 * Laby.labyAPI().minecraft().options().getChatScale());
 
     for (final Emote emote : this.emotes) {
+      // ToDo: set width/height to the same aspect ratio as icon (as soon as it is possible)
       component.append(parseEmotes(this.text
               .substring(lastEmote == -1 ? 0 : lastEmote, emote.start())))
           .append(Component.icon(emote.icon(), size));
@@ -59,6 +60,7 @@ public class Message {
     final ResourceManager manager = StreamChatAddon.getInstance().getResources();
     final int size = MathHelper.ceil(8 * Laby.labyAPI().minecraft().options().getChatScale());
 
+    // ToDo: set width/height to the same aspect ratio as icon (as soon as it is possible)
     return parse(message, text -> manager.getEmote(text) == null,
         text -> Component.icon(manager.getEmote(text), size), this::parseLinks);
   }

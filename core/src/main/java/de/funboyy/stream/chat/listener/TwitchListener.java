@@ -53,6 +53,7 @@ public class TwitchListener {
 
     final int size = MathHelper.ceil(8 * this.addon.labyAPI().minecraft().options().getChatScale());
 
+    // ToDo: set width/height to the same aspect ratio as icon (as soon as it is possible)
     badges.forEach(badge -> component.append(Component.icon(badge, size))
         .append(Component.icon(Icon.texture(Textures.EMPTY), size / 4)));
 
