@@ -14,7 +14,7 @@ dependencies {
     // You have to specify the repository, there are getters for maven central and sonatype, every
     // other repository has to be specified with their url. Example:
     // maven(mavenCentral(), "org.apache.httpcomponents:httpclient:4.5.13")
-    maven("https://jitpack.io", "com.github.twitch4j:twitch4j:1.18.0")
+    maven(mavenCentral(), "com.github.twitch4j:twitch4j:1.18.0")
     maven("https://jitpack.io", "com.github.ben-manes.caffeine:caffeine:3.1.8")
 }
 
