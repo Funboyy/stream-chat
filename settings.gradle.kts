@@ -1,7 +1,7 @@
 rootProject.name = "stream-chat"
 
 pluginManagement {
-    val labyGradlePluginVersion = "0.3.30"
+    val labyGradlePluginVersion = "0.3.36"
     plugins {
         id("net.labymod.gradle") version (labyGradlePluginVersion)
     }
