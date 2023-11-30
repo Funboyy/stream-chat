@@ -11,6 +11,7 @@ import net.labymod.api.client.gui.screen.activity.Link;
 import net.labymod.api.client.gui.screen.activity.types.SimpleActivity;
 import net.labymod.api.client.gui.screen.widget.Widget;
 import net.labymod.api.client.gui.screen.widget.widgets.ComponentWidget;
+import net.labymod.api.client.gui.screen.widget.widgets.DivWidget;
 import net.labymod.api.client.gui.screen.widget.widgets.input.ButtonWidget;
 import net.labymod.api.client.gui.screen.widget.widgets.layout.list.HorizontalListWidget;
 import net.labymod.api.client.gui.screen.widget.widgets.layout.list.VerticalListWidget;
@@ -93,10 +94,14 @@ public class TwitchTokenActivity extends SimpleActivity {
     text.addId("text");
     container.addChild(text);
 
+    final DivWidget buttonWrapper = new DivWidget();
+    buttonWrapper.addId("button-wrapper");
+    container.addChild(buttonWrapper);
+
     final ButtonWidget button = ButtonWidget.i18n(String.format("%s.activity.button",
         this.namespace), this::displayPreviousScreen);
     button.addId("button");
-    container.addChild(button);
+    buttonWrapper.addChild(button);
 
     this.document.addChild(container);
   }

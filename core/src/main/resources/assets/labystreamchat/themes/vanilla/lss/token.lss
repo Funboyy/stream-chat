@@ -32,10 +32,14 @@
     alignment-x: center;
   }
 
-  .button {
-    left: 50%;
-    top: 0;
-    width: 170;
-    alignment-x: center;
+  .button-wrapper {
+    height: fit-content;
+
+    .button {
+      left: 50%;
+      top: 0;
+      width: 170;
+      alignment-x: center;
+    }
   }
 }
