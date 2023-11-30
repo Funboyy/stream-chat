@@ -64,7 +64,7 @@ public class TwitchListener {
     final TwitchMessage twitchMessage = new TwitchMessage(component, channelId, userId, messageId);
     twitchMessage.send();
 
-    if (this.addon.configuration().soundOnMessage().get()) {
+    if (this.addon.configuration().soundOnMessage().get() && Laby.labyAPI().minecraft().isIngame()) {
       Laby.references().minecraftSounds().playChatFilterSound();
     }
   }
