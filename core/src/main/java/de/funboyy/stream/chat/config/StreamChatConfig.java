@@ -16,7 +16,6 @@ public class StreamChatConfig extends AddonConfig {
   @TextFieldSetting
   private final ConfigProperty<String> channel = new ConfigProperty<>("");
 
-  @TextFieldSetting
   private final TokenConfig tokenConfig = new TokenConfig();
 
   @SettingSection("message")
