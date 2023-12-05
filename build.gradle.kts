@@ -60,12 +60,6 @@ subprojects {
         maven("https://libraries.minecraft.net/")
         maven("https://repo.spongepowered.org/repository/maven-public/")
     }
-
-    tasks {
-        jar {
-            enabled = false
-        }
-    }
 }
 
 fun configureRun(provider: net.labymod.gradle.core.minecraft.provider.VersionProvider, gameVersion: String) {
