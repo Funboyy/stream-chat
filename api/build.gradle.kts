@@ -15,7 +15,7 @@ dependencies {
     // other repository has to be specified with their url. Example:
     // maven(mavenCentral(), "org.apache.httpcomponents:httpclient:4.5.13")
     maven(mavenCentral(), "com.github.twitch4j:twitch4j:1.18.0")
-    maven("https://jitpack.io", "com.github.ben-manes.caffeine:caffeine:3.1.8")
+    maven(mavenCentral(), "com.github.ben-manes.caffeine:caffeine:3.1.8")
 }
 
 labyModProcessor {
