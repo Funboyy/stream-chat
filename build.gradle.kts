@@ -60,6 +60,18 @@ subprojects {
         maven("https://libraries.minecraft.net/")
         maven("https://repo.spongepowered.org/repository/maven-public/")
     }
+
+    tasks {
+        shadowJar {
+            exclude("dependencies.txt")
+            exclude("digesterRules.xml")
+            exclude("LICENSE.txt")
+            exclude("properties.dtd")
+            exclude("PropertyList-1.0.dtd")
+            exclude("sampleapp.properties")
+            exclude("net/labymod/**")
+        }
+    }
 }
 
 fun configureRun(provider: net.labymod.gradle.core.minecraft.provider.VersionProvider, gameVersion: String) {
